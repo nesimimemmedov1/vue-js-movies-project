@@ -1,0 +1,87 @@
+{
+    "movies": [
+        {
+            "name": "Kayıp Aranıyor (2018)",
+            "rating": "7.6",
+            "image": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/pk9R56ZFlofbBzfwBnHlDyg5DMs.jpg",
+            "overview": "Film kaybolan kızını bulmak için bilgisayar üzerinden araştırmaya başlayan bir babanın yaşadıklarını konu ediyor. David Kim’in 16 yaşındaki kızı kaybolunca, yerel soruşturma açılıp davaya dedektif atanmıştır. Dedektiflerin araştırmaya başlamasından 37 saat sonra David kimsenin bakmadığı bir yeri araştırmaya karar verir. Bütün sırların saklandığı yer kızının bilgisayarıdır. Kızının bilgisayarı kurcalayan çaresiz baba, kızının kişisel dünyasına da giriş yapar. Bilmediği sırlarla karşılaşan adam, tamamen yok olmadan önce kızını bulmak için onun geride bıraktığı dijital ipuçlarını takip etmelidir...",
+            "price": "10",
+            "id": 1
+        },
+        {
+            "name": "Bal Ülkesi (2019)",
+            "rating": "8.1",
+            "image": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/6JfuTYYMB2Af6Iw5cEmpIOx5OSW.jpg",
+            "overview": "Filmde arıcılık ile uğraşan Hatice'nin hikayesi anlatılıyor. Hatice Muratova Makedonya'da nüfusunun çoğunu göç nedeniyle kaybetmiş bir köyde yaşamakta. Kent hayatı ile arasına mesafe koyan Hatice'nin yaşamı, istemese de dahil olmak istemediği piyasa dinamikleri ile kesişiyor. Çekimleri üç yıl süren film, günümüz koşullarında insan ve doğa arasındaki bağın nasıl olabileceğini yeniden yorumluyor.",
+            "price": "27",
+            "id": 2
+        },
+        {
+            "name": "Ayin (2018)",
+            "rating": "7.2",
+            "image": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/5Bz0u7xEyOUnGi4ov3rZKqKYCuH.jpg",
+            "overview": "Graham ailesinin en büyüğü Ellen öldüğünde, ailenin geri kalan üyeleri kökleriyle ilgili korkutucu sırlardan haberdar olmaya başlarlar. Daha fazlasını öğrendikçe, kendilerine miras kalan bu kaderden kurtulabilmek için daha da umutsuzca çabalamaya başlarlar. Kendini dış dünyaya fazla açmamış annelerinin sakladıkları sırlar, ölümcül sonuçlar doğuracaktır.",
+            "price": "15",
+            "id": 3
+        },
+        {
+            "name": "Locke (2014)",
+            "rating": "6.9",
+            "image": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/fMotwVtyUr833goyv7EzgAp0bCR.jpg",
+            "overview": "Bir inşaat şirketinde başarılı bir kariyeri olan Ivan Locke, işin en önemli gününde kimseye açıklamadığı bir işi tamamlamak üzere şantiyeden ayrılmak durumunda kalır. Yaptığı ufak bir hata hayatına mal olmak üzeredir. Locke, şimdi hayatı boyunca yüzleşmek ve üstesinden gelmek zorunda olduğu sorunlar yüzünden kapana kısılmıştır.\n\n\"Şark Vaatleri\",\" Kirli Tatlı Şeyler\"in senaryolarına imza atan Steven Knight'ın yazıp yönettiği; Tom Hardy'nin başrolünde olduğu, gerçek zamanlı bu son derece sıra dışı gerilim, bu yılın en çok beklenen filmleri arasında..",
+            "id": 4
+        },
+        {
+            "name": "The Platform (2019)",
+            "rating": "7",
+            "image": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/1s4MJNW9nLssAzyHvFt8M14O0yT.jpg",
+            "overview": "İzleyiciyi distopik bir geleceğe götüren The Platform, her katta bir hücrenin, her hücrede iki kişinin olduğu dikey bir hapishanede geçiyor. Her gün sadece iki dakika bu dikey hapishanenin en üst katından aşağı yiyecek gönderiliyor. Üst kattakiler yiyecekleri ele geçirmek için zamana karşı yarışırken, en alt kattakiler açlık içinde her geçen gün biraz daha vahşi, biraz daha radikal hâle geliyor. Filmde üst kattakilerin alttakilere göre daha iyi beslendiği bu hapishanedeki bir mahkûmun, herkese yeterince yemek ulaşması için sistemde değişiklik yapmaya başlamasıyla yaşanan olayları konu alıyor.",
+            "price": "43",
+            "id": 5
+        },
+        {
+            "name": "Truman Şov (1998)",
+            "rating": "81",
+            "image": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/dOmxN9xhLITi43j2xGFEcsgv7QM.jpg",
+            "overview": "Truman Burbank, kartpostalları aratmayacak güzellikte bir adada yaşamaktadır. Bir işi, evi ve çok sevdiği karısı vardır. Ancak Truman dışında herkes tüm bunların düzmece olduğunu bilmektedir. Truman’ın yaşamı gerçek zannettiği bu stüdyolarda tam otuz yıldır, 24 saat boyunca canlı olarak bütün dünyaya yayınlanmaktadır. Truman bundan hiç şüphelenmemiştir, ta ki öldü zannettiği babasını bir gün caddeden geçen figüranlar arasında görünceye kadar… Alacakaranlık Kuşağı adlı kült televizyon dizisinin bir bölümünden esinlenerek yaratılan Truman Show, Batı dünyasında on yıllardır süregelen toplumsal eleştirilere bir örnek olarak yerini alıyor. Peter Weir’in filminde söylemeye çalıştıkları ve Truman’ın trajedisi, kimi zaman beklendiği üzere gözlerinizi doldurmasa da, başı ve sonu olan eliyüzü düzgün bir Jim Carrey filmine kim hayır diyebilir.",
+            "id": 6
+        },
+        {
+            "name": "Ay (2009)",
+            "rating": "7.6",
+            "image": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/cJ6JnuLwCNbiAAOBuHDjRTP7bQJ.jpg",
+            "overview": "Astronot Sam Bell, Lunar Industries şirketi ile üç senelik bir kontrata imza atmıştır. Sözleşme gereği gezegenimizi besleyen önemli enerji kaynaklarından olan Helium-3 madenini Ay'ın yüzeyinden çıkaracak tesisin tek sorumlusu olacaktır. Bu meşakkatli görevde tek yardımcısı Gerty adındaki bir robottur. Sam Ay’da kendine ait bir rutin yaratmıştır. Günlerini sessizlik içinde geçiren Sam eve dönmesine üç hafta kala bir kaza geçirir. Uyandığında yalnız olmadığını fark edecektir.",
+            "id": 7
+        },
+        {
+            "name": "Oyuncak Hikayesi (1995)",
+            "rating": "7.9",
+            "image": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/uXDfjJbdP4ijW5hWSBrPrlKpxab.jpg",
+            "overview": "Buzz Lightyear adlı yeni çıkan oyuncak, Andy'e hediye edilir. Oyuncağı çok seven Andy, eski gözdesi Şerif Woody'e olan ilgisini yitirir. Bir gün Buzz yanlışlıkla pencereden aşağı uçunca, herkes Woody'nin onu öldürdüğüne inanır. Woody, kendisini kurtarabilmek için Buzz'ın arkasından giderek onu geri getirmeye karar verir. Fakat ikiliyi dış dünyada büyük tehlikelerle dolu maceralar beklemektedir.\n\n",
+            "id": 8
+        },
+        {
+            "name": "Yırtıcı Kuşlar (ve Muhteşem Harley Quinn) (2020)",
+            "rating": "7.1",
+            "image": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/ZB3EBbF3HHywU7jfcwP8eDnUwn.jpg",
+            "overview": "Joker'den ayrılan Harley Quinn, bir suç lordundan nadir bir elmas çaldıktan sonra üzerine ödül koyulan genç bir kıza yardım etmek için bir şarkıcı, bir suikastçı ve bir polis dedektifiyle güçlerini birleştiriyor.",
+            "price": "33",
+            "id": 9
+        },
+        {
+            "name": "Arakçılar (2018)",
+            "rating": "7.9",
+            "image": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/hlztmzyysBIGFF9qf1fOQgOzLN5.jpg",
+            "overview": "Shibata ailesi hem ufak gündelik işlerden hem de süpermarketlerden hırsızlık yaparak geçimini sağlayan geniş bir ailedir. Bir gün, hırsızlık yaptıktan sonra baba Osamu ve oğlu, dondurucu soğukta bir barakaya terk edilmiş küçük bir kıza rastlar. İlk önce Osamu’nun eşi, kızı kabul etmekte gönülsüz olsa da küçük kızın yaşadığı zorlukları öğrendikten sonra kızla ilgilenmeyi kabul eder. Hayatta kalmak için geçimini zar zor sağlayan bu aile birlikte yaşadıkları için mutludur ancak öngörülemeyen bir olay, gizli sırları açığa çıkartacak ve onları birleştiren aile bağlarının sarsılmasına neden olacaktır.\n\n",
+            "id": 10
+        },
+        {
+            "name": "Yıldız Savaşları: İmparator'un Dönüşü (1980)",
+            "rating": "8.4",
+            "image": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/7BuH8itoSrLExs2YZSsM01Qk2no.jpg",
+            "overview": "Darth Vader'ın da yardımıyla İmparator, asileri ezerek evreni hakimiyeti altına almaya çalışmaktadır. Gönderdikleri casus robotlar sayesinde asilerin merkezinin Hoth gezegeninde olduğunu öğrenir ve birlikleri oraya gönderirler. Luke Skywalker, Han Solo ve Prenses Lea, son anda Bulut Şehri'ne kaçarlar. Luke bu arada Yoda'yı bulmak ve Jedi eğitimini tamamlamak üzere yola çıkar. Kahramanlarımız bir araya gelip İmparator'u yenebilecekler midir?\n\n",
+            "price": "54",
+            "id": 11
+        }
+    ]
+}
