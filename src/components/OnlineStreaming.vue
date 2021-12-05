@@ -7,40 +7,23 @@
             <h6>ONLINE STREAMING</h6>
             <h1>Upcoming Movies</h1>
           </div>
-          <div class="movie-category">
-            <button @click="activeCategory = 'appTvShows'" class="active">
-              TV Shows
-            </button>
-            <button @click="activeCategory = 'appMovie'">Movies</button>
-            <button @click="activeCategory = 'appAnime'">Anime</button>
-          </div>
         </div>
         <transition name="fade" mode="out-in">
-          <component :is="activeCategory">
-            <div class="category">
-              {{ activeCategory }}
-            </div>
-          </component>
+            <app-movie></app-movie>
         </transition>
       </div>
     </div>
   </div>
 </template>
 <script>
-import $ from "jquery";
-import tvshow from "../components/TvShows";
-import movie from "../components/Movie";
-import anime from "../components/Anime";
+import movie from "../components/Carousel";
 
 export default {
   components: {
-    appTvShows: tvshow,
     appMovie: movie,
-    appAnime: anime,
   },
   data() {
     return {
-      activeCategory: "appTvShows",
     };
   },
 };

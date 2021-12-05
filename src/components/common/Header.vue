@@ -3,16 +3,17 @@
     <div class="container">
       <div class="nav">
         <div class="logo">
-          <a href="/"><img src="/src/assets/logo.png" alt="" /></a>
+          <router-link tag="div" to="/">
+            <a href="/"><img src="/src/assets/logo.png" alt="" /></a>
+          </router-link>
         </div>
         <div class="links">
           <ul class="header-navbar">
-            <li class="nav-link"><a href="/">home</a></li>
-            <li class="nav-link"><a href="/">movie</a></li>
-            <li class="nav-link"><a href="/">tv show</a></li>
-            <li class="nav-link"><a href="/">pricing</a></li>
-            <li class="nav-link"><a href="/">blog</a></li>
-            <li class="nav-link"><a href="/">contacts</a></li>
+            <router-link active-class="active-link" exact class="nav-link" tag="li" to="/"><a href="">home</a></router-link>
+            <router-link active-class="active-link" class="nav-link" tag="li" to="/movie"><a href="">movie</a></router-link>
+            <router-link active-class="active-link" class="nav-link" tag="li" to="/pricing"><a href="">pricing</a></router-link>
+            <router-link active-class="active-link" class="nav-link" tag="li" to="/blog"><a href="">blog</a></router-link>
+            <router-link active-class="active-link" class="nav-link" tag="li" to="/contact"><a href="">contacts</a></router-link>
           </ul>
         </div>
         <div class="header-action">
@@ -44,6 +45,7 @@ export default {};
   padding: 40px 0;
   width: 100%;
   position: absolute;
+  z-index: 10;
   .container {
     .nav {
       display: flex;

@@ -1,87 +1,81 @@
 <template>
-  <carousel
-    id="carousel-main"
-    :margin="25"
-    :dots="false"
-    :loop="true"
-    :items="4"
-    :nav="false"
-  >
-    <a href="/" class="movie-item">
-      <img src="../assets/coverimg7.jpg" alt="" />
-      <div class="movie-name">
-        <h6 class="name">Life Quotes</h6>
-        <h6 class="release-date">2021</h6>
-      </div>
-      <div class="about-movie">
-        <span>HD</span>
-        <div>
-          <h6 class="duration"><i class="far fa-clock"></i> 126 min</h6>
-          <h6 class=""><i class="fas fa-thumbs-up"></i>4.1</h6>
+  <div id="movie">
+    <div class="breadcrump">
+      <div class="container">
+        <div class="content">
+          <h1>Our Movie</h1>
+          <div class="breadcrump-text">
+            <h6 @click="goToHome">HOME</h6>
+            <div class="line"></div>
+            <h6>MOVIE</h6>
+          </div>
         </div>
       </div>
-    </a>
-    <a href="/" class="movie-item">
-      <img src="../assets/coverimg6.jpg" alt="" />
-      <div class="movie-name">
-        <h6 class="name">Hikaru</h6>
-        <h6 class="release-date">2021</h6>
-      </div>
-      <div class="about-movie">
-        <span>HD</span>
-        <div>
-          <h6 class="duration"><i class="far fa-clock"></i> 128 min</h6>
-          <h6 class=""><i class="fas fa-thumbs-up"></i>5.0</h6>
-        </div>
-      </div>
-    </a>
-    <a href="/" class="movie-item">
-      <img src="../assets/coverimg1.jpg" alt="" />
-      <div class="movie-name">
-        <h6 class="name">Women's day</h6>
-        <h6 class="release-date">2021</h6>
-      </div>
-      <div class="about-movie">
-        <span>HD</span>
-        <div>
-          <h6 class="duration"><i class="far fa-clock"></i> 125 min</h6>
-          <h6 class=""><i class="fas fa-thumbs-up"></i>6.5</h6>
-        </div>
-      </div>
-    </a>
-    <a href="/" class="movie-item">
-      <img src="../assets/coverimg8.jpg" alt="" />
-      <div class="movie-name">
-        <h6 class="name">The Beach Ball</h6>
-        <h6 class="release-date">2021</h6>
-      </div>
-      <div class="about-movie">
-        <span>HD</span>
-        <div>
-          <h6 class="duration"><i class="far fa-clock"></i> 122 min</h6>
-          <h6 class=""><i class="fas fa-thumbs-up"></i>5.2</h6>
-        </div>
-      </div>
-    </a>
-    <a href="/" class="movie-item">
-      <img src="../assets/coverimg5.jpg" alt="" />
-      <div class="movie-name">
-        <h6 class="name">The Cooking</h6>
-        <h6 class="release-date">2021</h6>
-      </div>
-      <div class="about-movie">
-        <span>HD</span>
-        <div>
-          <h6 class="duration"><i class="far fa-clock"></i> 120 min</h6>
-          <h6 class=""><i class="fas fa-thumbs-up"></i>6.7</h6>
-        </div>
-      </div>
-    </a>
-  </carousel>
+    </div>
+  </div>
 </template>
 <script>
-import carousel from "vue-owl-carousel";
 export default {
-  components: { carousel },
+  data() {
+    return {};
+  },
+  methods: {
+    goToHome() {
+      this.$router.push("/");
+    },
+  },
 };
 </script>
+<style lang="scss" scoped>
+#movie {
+  background-color: #100e17;
+  color: white;
+  .breadcrump {
+    background-image: url("../assets/breadcrumb_bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    padding: 270px 0 240px;
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: #04081a;
+      background: linear-gradient(to right, #04081a, transparent);
+      opacity: 0.66;
+    }
+    .content {
+      position: relative;
+      z-index: 8;
+      h1 {
+        font-size: 60px;
+        font-weight: bold;
+      }
+      .breadcrump-text {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        h6 {
+          font-size: 14px;
+          font-weight: 700;
+          &:first-child {
+            color: #e4d804;
+            cursor: pointer;
+          }
+        }
+        .line {
+          width: 3px;
+          background-color: white;
+          display: block;
+          height: 13px;
+          margin: 0 14px;
+        }
+      }
+    }
+  }
+}
+</style>

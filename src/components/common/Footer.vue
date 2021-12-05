@@ -13,7 +13,6 @@
               <ul class="footer-navbar">
                 <li class="nav-link"><a href="/">HOME</a></li>
                 <li class="nav-link"><a href="/">MOVIE</a></li>
-                <li class="nav-link"><a href="/">TV SHOW</a></li>
                 <li class="nav-link"><a href="/">PAGES</a></li>
                 <li class="nav-link"><a href="/">PRICING</a></li>
               </ul>

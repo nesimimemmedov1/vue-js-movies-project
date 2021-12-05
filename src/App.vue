@@ -1,31 +1,16 @@
 <template>
   <div id="app">
-    <app-header></app-header>
-    <app-banner></app-banner>
-    <app-online-streaming></app-online-streaming>
-    <app-services></app-services>
-    <app-newsletter></app-newsletter>
-    <app-footer></app-footer>
+    <router-view name="Header"></router-view>
+    <router-view></router-view>
+    <router-view name="Streaming"></router-view>
+    <router-view name="Services"></router-view>
+    <router-view name="Newsletter"></router-view>
+    <router-view name="Footer"></router-view>
   </div>
 </template>
 
 <script>
-import Header from "./components/common/Header";
-import Banner from "./components/Banner";
-import OnlineStreaming from "./components/OnlineStreaming";
-import Services from "./components/Services";
-import Newsletter from "./components/Newsletter";
-import Footer from "./components/common/Footer";
-
 export default {
-  components: {
-    appHeader: Header,
-    appBanner: Banner,
-    appOnlineStreaming: OnlineStreaming,
-    appServices: Services,
-    appNewsletter: Newsletter,
-    appFooter: Footer,
-  },
   name: "app",
   data() {
     return {};
@@ -120,8 +105,12 @@ video {
   border: 0;
   font-size: 100%;
   font: inherit;
-  vertical-align: baseline;
   font-family: "Poppins", sans-serif;
+}
+
+input,
+textarea:focus-visible {
+  outline: 0;
 }
 
 #app {
@@ -131,12 +120,18 @@ video {
   text-align: center;
 }
 
-a {
-  text-decoration: none;
-  transition: .3s;
+.active-link {
+  a {
+    color: #e4d804 !important;
+  }
 }
 
-i{
+a {
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+i {
   cursor: pointer;
 }
 
@@ -152,6 +147,5 @@ ul {
 
 li {
   display: inline-block;
-  margin: 0 10px;
 }
 </style>
