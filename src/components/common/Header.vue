@@ -9,11 +9,42 @@
         </div>
         <div class="links">
           <ul class="header-navbar">
-            <router-link active-class="active-link" exact class="nav-link" tag="li" to="/"><a href="">home</a></router-link>
-            <router-link active-class="active-link" class="nav-link" tag="li" to="/movie"><a href="">movie</a></router-link>
-            <router-link active-class="active-link" class="nav-link" tag="li" to="/pricing"><a href="">pricing</a></router-link>
-            <router-link active-class="active-link" class="nav-link" tag="li" to="/blog"><a href="">blog</a></router-link>
-            <router-link active-class="active-link" class="nav-link" tag="li" to="/contact"><a href="">contacts</a></router-link>
+            <router-link
+              active-class="active-link"
+              exact
+              class="nav-link"
+              tag="li"
+              to="/"
+              ><a href="">home</a></router-link
+            >
+            <router-link
+              active-class="active-link"
+              class="nav-link"
+              tag="li"
+              to="/movie"
+              ><a href="">movie</a></router-link
+            >
+            <router-link
+              active-class="active-link"
+              class="nav-link"
+              tag="li"
+              to="/pricing"
+              ><a href="">pricing</a></router-link
+            >
+            <router-link
+              active-class="active-link"
+              class="nav-link"
+              tag="li"
+              to="/blog"
+              ><a href="">blog</a></router-link
+            >
+            <router-link
+              active-class="active-link"
+              class="nav-link"
+              tag="li"
+              to="/contact"
+              ><a href="">contacts</a></router-link
+            >
           </ul>
         </div>
         <div class="header-action">
@@ -80,7 +111,8 @@ export default {};
         display: flex;
         align-items: center;
         .search {
-          margin-right: 25px;
+          margin-right: 16px;
+          margin-top: 3px;
           i {
             font-size: 16px;
           }
