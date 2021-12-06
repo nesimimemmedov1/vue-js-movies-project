@@ -27,7 +27,7 @@ export default {};
 <style lang="scss" scoped>
 #banner-section {
   padding: 290px 0;
-  background-image: url(../assets/image1.jpg);
+  background-image: url("../assets/image1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   .container {
