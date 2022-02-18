@@ -2,7 +2,7 @@
   <div id="details">
     <div class="container">
       <div class="row">
-        <div class="col-3">
+        <div class="col-sm-12 col-md-12 col-lg-3 col-xl-3">
           <div class="movie-img">
             <img :src="`${cart.image}`" alt="" />
             <div class="play-btn">
@@ -10,7 +10,7 @@
             </div>
           </div>
         </div>
-        <div class="col-6">
+        <div class="col-sm-12 col-md-12 col-lg-6">
           <div class="movie-details">
             <h1 class="episodes">New Episodes</h1>
             <h1 class="movie-name">{{ cart.name }}</h1>
@@ -52,7 +52,7 @@
             </div>
           </div>
         </div>
-        <div class="col-3">
+        <div class="col-lg-2">
           <a href="" class="download-btn">
             DOWNLOAD
             <img class="img-fluid" src="../assets/download.svg" alt="" />
@@ -73,6 +73,7 @@ export default {
   created() {
     eventBus.$on("cartData", (data) => {
       this.cart = data;
+      console.log(this.cart);
     });
   },
 };
@@ -97,7 +98,7 @@ body {
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        img{
+        img {
           cursor: pointer;
         }
       }
@@ -120,12 +121,15 @@ body {
         color: white;
       }
       .about-movie {
+        display: flex;
+        flex-wrap: wrap;
         font-size: 11px;
         margin: 12px 0 30px;
         font-weight: 600;
         color: white;
         display: flex;
         span {
+          margin-bottom: 20px !important;
           border: 2px solid white;
           background: white;
           padding: 2px 10px;
@@ -144,16 +148,15 @@ body {
           font-weight: 500;
           font-size: 14px;
         }
-
         .genre {
           padding: 0px 16px;
         }
-
         .genre,
         .release-time {
           color: #e3dfdf;
           font-weight: 500;
           font-size: 14px;
+          margin-bottom: 20px;
         }
         .release-time {
           display: flex;
@@ -179,6 +182,7 @@ body {
         display: flex;
         align-items: center;
         justify-content: space-between;
+        flex-wrap: wrap;
         max-width: 475px;
         background: #242c38;
         border-radius: 4px;
@@ -268,6 +272,96 @@ body {
         width: 24px;
         height: 24px;
         object-fit: cover;
+      }
+    }
+  }
+}
+//media-queries
+@media (max-width: 1400px) {
+  #details {
+    .container {
+      .movie-details {
+        .episodes {
+          font-size: 23px;
+        }
+        .movie-name {
+          font-size: 48px;
+        }
+        .about-movie {
+          margin: 12px 0 16px;
+        }
+        .prime-movie {
+          margin-top: 26px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1200px) {
+  #details {
+    .container {
+      .download-btn {
+        transform: rotate(0);
+        padding: 20px 35px;
+        left: 12px;
+        right: unset;
+        bottom: 50px;
+        img {
+          transform: rotate(0);
+          width: 14px;
+          height: 14px;
+          margin-left: 8px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 991.9px) {
+  #details {
+    .container {
+      .movie-img {
+        width: 44%;
+        margin: 0 auto;
+      }
+      .movie-details {
+        margin-top: 40px;
+      }
+      .download-btn {
+        position: static;
+        width: max-content;
+        margin-top: 30px;
+      }
+    }
+  }
+}
+@media (max-width: 767.9px) {
+  #details {
+    .container {
+      .movie-details {
+        .movie-name {
+          font-size: 32px;
+        }
+        .episodes {
+          font-size: 19px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 575.9px) {
+  #details {
+    .container {
+      .movie-img {
+        width: 70%;
+      }
+      .movie-details {
+        .prime-movie {
+          justify-content: center;
+          flex-direction: column;
+          .prime-btn {
+            margin-top: 20px;
+          }
+        }
       }
     }
   }

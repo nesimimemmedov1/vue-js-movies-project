@@ -9,7 +9,7 @@
           </div>
         </div>
         <transition name="fade" mode="out-in">
-            <app-movie></app-movie>
+          <app-movie></app-movie>
         </transition>
       </div>
     </div>
@@ -23,8 +23,7 @@ export default {
     appMovie: movie,
   },
   data() {
-    return {
-    };
+    return {};
   },
 };
 </script>
@@ -91,9 +90,32 @@ export default {
 
 #carousel-main {
   margin-top: 40px;
+  .owl-nav {
+    position: absolute;
+    top: -99px;
+    right: 0;
+    background: #20212b;
+    border: 2px solid #2d303d;
+    color: #e3dfdf;
+    padding: 10px 6px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .owl-prev,
+    .owl-next {
+      background: transparent;
+      padding: 1px 16px;
+      margin: 0;
+    }
+    .owl-prev {
+      border-right: 3px solid #292b37;
+    }
+  }
   .owl-item {
     img {
       border-radius: 7px;
+      margin: 0 auto;
     }
     .movie-item {
       display: block;
@@ -145,6 +167,59 @@ export default {
         }
         .duration {
           margin-right: 12px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1200px) {
+}
+@media (max-width: 991.9px) {
+}
+@media (max-width: 767.9px) {
+  #streaming-section {
+    .main {
+    padding: 60px 0;
+      .container {
+        .header {
+          .title {
+            h1 {
+              font-size: 28px;
+            }
+          }
+        }
+        #carousel-main {
+          .owl-nav {
+            padding: 4px 0px;
+            top: -96px;
+            .owl-prev,
+            .owl-next {
+              i {
+                font-size: 12px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 575.9px) {
+  #streaming-section {
+    .main {
+      .container {
+        #carousel-main {
+          .owl-nav {
+            position: static;
+            width: max-content;
+            margin: 25px auto 0 auto;
+          }
+          .owl-item {
+            .item {
+              width: 70%;
+              margin: 0 auto;
+            }
+          }
         }
       }
     }

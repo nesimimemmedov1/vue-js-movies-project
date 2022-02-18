@@ -78,4 +78,37 @@ export default {
     }
   }
 }
+//media queries
+@media (max-width: 1200px) {
+}
+@media (max-width: 991.9px) {
+  #movie {
+    .breadcrump {
+      padding: 200px 0 210px;
+    }
+  }
+}
+@media (max-width: 767.9px) {
+  #movie {
+    .breadcrump {
+      padding: 160px 0 160px;
+      .content {
+        h1 {
+          font-size: 40px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 575.9px) {
+  #movie {
+    .breadcrump {
+      .content {
+        h1 {
+          font-size: 34px;
+        }
+      }
+    }
+  }
+}
 </style>

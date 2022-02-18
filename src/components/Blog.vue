@@ -15,7 +15,7 @@
     <div class="content">
       <div class="container">
         <div class="row">
-          <div class="col-8">
+          <div class="col-sm-12 col-md-12 col-lg-8">
             <div class="blog-item">
               <router-link to="/" tag="a" class="blog-img">
                 <img src="/src/assets/blog_thumb01.jpg" alt="" />
@@ -158,7 +158,7 @@
               </div>
             </div>
           </div>
-          <div class="col-4">
+          <div class="col-sm-12 col-md-12 col-lg-4">
             <div class="sidebar">
               <div class="blog-widget">
                 <ul class="category">
@@ -380,6 +380,7 @@ li {
       }
       .blog-footer {
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
         border-top: 2px solid #101010;
         padding-top: 20px;
@@ -549,6 +550,115 @@ li {
               &::after {
                 border-color: transparent transparent transparent #e4d804;
                 color: black;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+//media queries
+@media (max-width: 1200px) {
+  #blog {
+    .sidebar {
+      margin: 0;
+      .blog-widget {
+        .widget-item {
+          a {
+            .blog-content {
+              .blog-title {
+                font-size: 12px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 991.9px) {
+  #blog {
+    .breadcrump {
+      padding: 200px 0 210px;
+    }
+    .content {
+      padding: 110px 0 100px;
+      .blog-item {
+        margin-bottom: 30px;
+      }
+    }
+    .sidebar {
+      .blog-widget {
+        .widget-item {
+          a {
+            align-items: flex-start;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 767.9px) {
+  #blog {
+    .content {
+      padding: 100px 0 70px;
+      .blog-item {
+        .blog-content {
+          padding: 20px;
+          p {
+            margin-bottom: 16px;
+          }
+          .blog-title {
+            font-size: 22px;
+            margin: 8px 0 10px;
+          }
+          p {
+            font-size: 13px;
+          }
+        }
+        .blog-footer {
+          .more-btn {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+
+    .breadcrump {
+      padding: 160px 0 160px;
+      .title {
+        h1 {
+          font-size: 40px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 575.9px) {
+  #blog {
+    .breadcrump {
+      .title {
+        h1 {
+          font-size: 34px;
+        }
+      }
+    }
+    .sidebar {
+      .blog-widget {
+        .tag-list {
+          .list-item {
+            a {
+              font-size: 13px;
+            }
+          }
+        }
+        .widget-item {
+          a {
+            .blog-img {
+              margin-right: 12px;
+              img {
+                width: 85px;
               }
             }
           }

@@ -30,6 +30,7 @@ export default {};
   background-image: url("../assets/image1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
   .container {
     .main {
       display: flex;
@@ -51,6 +52,7 @@ export default {};
       }
       .about-movie {
         display: flex;
+        flex-wrap: wrap;
         align-items: center;
         font-size: 11px;
         margin: 30px 0 50px;
@@ -67,10 +69,14 @@ export default {};
           padding: 2px 10px;
           margin-right: 20px;
         }
-
+        .quality,
+        .episode {
+          margin-bottom: 15px;
+        }
         .release-date,
         .duration,
         .type {
+          margin-bottom: 15px;
           font-size: 14px;
           font-weight: 500;
           i {
@@ -101,6 +107,51 @@ export default {};
           i {
             color: black;
           }
+        }
+      }
+    }
+  }
+}
+//media-queries
+@media (max-width: 1200px) {
+  #banner-section {
+    padding: 250px 0;
+    .container {
+      .main {
+        h1 {
+          font-size: 42px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 991.9px) {
+  #banner-section {
+    padding: 220px 0;
+  }
+}
+@media (max-width: 767.9px) {
+  #banner-section {
+    padding: 185px 0 150px;
+    .container {
+      .main {
+        h1 {
+          font-size: 36px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 575.9px) {
+  #banner-section {
+    .container {
+      .main {
+        h1 {
+          font-size: 28px;
+        }
+        a {
+          padding: 12px 20px;
+          font-size: 10px;
         }
       }
     }

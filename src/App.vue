@@ -8,7 +8,6 @@
     <router-view name="Footer"></router-view>
   </div>
 </template>
-
 <script>
 export default {
   name: "app",

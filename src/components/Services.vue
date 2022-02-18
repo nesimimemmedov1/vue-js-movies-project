@@ -2,18 +2,14 @@
   <div id="services-section">
     <div class="container">
       <div class="row">
-        <div class="col-6">
+        <div class="col-sm-12 col-md-12 col-lg-5">
           <div class="wrapper">
             <div class="image">
               <img class="img-fluid" src="../assets/resbg.jpg" alt="" />
             </div>
-            <a href="" class="download-btn">
-              DOWNLOAD
-              <img class="img-fluid" src="../assets/download.svg" alt="" />
-            </a>
           </div>
         </div>
-        <div class="col-6">
+        <div class="col-sm-12 col-md-12 col-lg-7">
           <div class="about-services">
             <span>OUR SERVICES</span>
             <h1>Download Your Shows Watch Offline.</h1>
@@ -66,9 +62,6 @@ export default {};
   background-repeat: no-repeat;
   .container {
     .wrapper {
-      display: flex;
-      align-items: flex-end;
-      position: relative;
       .image {
         img {
           object-fit: cover;
@@ -110,7 +103,6 @@ export default {};
         letter-spacing: 1px;
         position: relative;
         padding-left: 53px;
-        margin-top: 10px;
         &::before {
           content: "";
           width: 40px;
@@ -144,11 +136,11 @@ export default {};
           padding-bottom: 25px;
           margin-bottom: 25px;
         }
-        &:hover {
-          i {
-            background-color: #e4d804;
-          }
-        }
+        // &:hover {
+        //   i {
+        //     background-color: #e4d804;
+        //   }
+        // }
         .icon {
           flex: 0 0 95px;
           width: 95px;
@@ -165,9 +157,6 @@ export default {};
             font-size: 35px;
             border: 1px transparent;
             border-radius: 100%;
-            display: block;
-            width: 85px;
-            height: 85px;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -191,5 +180,58 @@ export default {};
       }
     }
   }
+}
+//media queries
+@media (max-width: 1200px) {
+  #services-section {
+    .container {
+      .about-services {
+        h1 {
+          font-size: 30px;
+        }
+        p {
+          font-size: 13px;
+          padding-bottom: 14px;
+        }
+        .services {
+          &:first-child {
+            padding-bottom: 15px;
+            margin-bottom: 15px;
+          }
+          .icon {
+            flex: 0 0 70px;
+            width: 70px;
+            height: 70px;
+            i {
+              font-size: 28px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 991.9px) {
+  #services-section {
+    .container {
+      .about-services {
+        padding-left: 0;
+        padding-top: 70px;
+      }
+    }
+  }
+}
+@media (max-width: 767.9px) {
+  #services-section {
+    .container {
+      .about-services {
+        h1 {
+          font-size: 28px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 575.9px) {
 }
 </style>

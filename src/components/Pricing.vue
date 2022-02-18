@@ -20,7 +20,7 @@
           <img src="../assets/shape.png" alt="" />
         </div>
         <div class="row">
-          <div class="col-sm-12 col-md-4 col-lg-4">
+          <div class="col-sm-8 col-md-6 col-lg-4">
             <div class="cart">
               <div class="pricing-top">
                 <div class="pricing-item">
@@ -59,7 +59,7 @@
               </div>
             </div>
           </div>
-          <div class="col-sm-12 col-md-4 col-lg-4">
+          <div class="col-sm-8 col-md-6 col-lg-4">
             <div class="cart active">
               <div class="pricing-top">
                 <div class="pricing-item">
@@ -98,7 +98,7 @@
               </div>
             </div>
           </div>
-          <div class="col-sm-12 col-md-4 col-lg-4">
+          <div class="col-sm-8 col-md-6 col-lg-4">
             <div class="cart">
               <div class="pricing-top">
                 <div class="pricing-item">
@@ -229,80 +229,152 @@ export default {
     .active {
       border: 2px solid #e4d804 !important;
     }
-    .cart {
-      box-shadow: 0px 3px 13px 0px rgba(0, 0, 0, 0.14);
-      background: #1f1e24;
-      border: 2px solid #1f1e24;
-      padding: 45px 40px 60px;
-      transition: 0.3s linear;
-      border-radius: 3px;
-      &:hover {
-        border: 2px solid #e4d804;
-      }
-      .pricing-item {
-        .category {
-          font-size: 12px;
-          font-weight: bold;
-          margin-bottom: 20px;
+    .row {
+      align-items: center;
+      justify-content: center;
+      .cart {
+        box-shadow: 0px 3px 13px 0px rgba(0, 0, 0, 0.14);
+        background: #1f1e24;
+        border: 2px solid #1f1e24;
+        padding: 45px 40px 60px;
+        transition: 0.3s linear;
+        border-radius: 3px;
+        margin-bottom: 30px;
+        &:hover {
+          border: 2px solid #e4d804;
         }
-        .price-box {
-          border-radius: 4px;
-          background: #e4d804;
-          box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.14),
-            inset 0px 3px 7px 0px rgba(0, 0, 0, 0.31);
-          color: black;
-          margin: 0 95px 40px;
-          padding: 20px 25px;
-          .price {
-            font-size: 28px;
-            font-weight: 700;
-          }
-          h6 {
-            font-size: 15px;
-            font-weight: 600;
-          }
-        }
-      }
-      .pricing-list {
-        .item-list {
-          .list {
-            display: block;
-            text-align: left;
-            margin: 0;
+        .pricing-item {
+          .category {
             font-size: 12px;
-            border-bottom: 1px solid #414146;
-            font-weight: 500;
-            padding: 14px 0;
-            &:first-child {
+            font-weight: bold;
+            margin-bottom: 20px;
+          }
+          .price-box {
+            border-radius: 4px;
+            background: #e4d804;
+            box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.14),
+              inset 0px 3px 7px 0px rgba(0, 0, 0, 0.31);
+            color: black;
+            margin: 0 auto 40px;
+            padding: 20px 25px;
+            max-width: 138px;
+            .price {
+              font-size: 28px;
+              font-weight: 700;
+            }
+            h6 {
+              font-size: 15px;
+              font-weight: 600;
+            }
+          }
+        }
+        .pricing-list {
+          .item-list {
+            .list {
+              display: block;
+              text-align: left;
+              margin: 0;
+              font-size: 12px;
+              border-bottom: 1px solid #414146;
+              font-weight: 500;
+              padding: 14px 0;
+              &:first-child {
+                span {
+                  color: #e4d804;
+                }
+              }
+              i {
+                margin-right: 10px;
+              }
               span {
-                color: #e4d804;
+                float: right;
               }
             }
-            i {
-              margin-right: 10px;
-            }
-            span {
-              float: right;
+          }
+        }
+        .pricing-btn {
+          margin-top: 40px;
+          a {
+            border: 2px solid #e4d804;
+            background-color: #20212b;
+            color: white;
+            border-radius: 50px;
+            padding: 12px 28px;
+            font-size: 12px;
+            font-weight: 700;
+            display: inline-block;
+            transition: 0.3s;
+            &:hover {
+              background-color: #e4d804;
+              color: #20212b;
             }
           }
         }
       }
-      .pricing-btn {
-        margin-top: 40px;
-        a {
-          border: 2px solid #e4d804;
-          background-color: #20212b;
-          color: white;
-          border-radius: 50px;
-          padding: 12px 28px;
-          font-size: 12px;
-          font-weight: 700;
-          display: inline-block;
-          transition: 0.3s;
-          &:hover {
-            background-color: #e4d804;
-            color: #20212b;
+    }
+  }
+}
+//media queries
+@media (max-width: 1200px) {
+  #pricing {
+    .our-pricing {
+      .row {
+        .cart {
+          padding: 45px 20px 60px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 991.9px) {
+  #pricing {
+    .breadcrump {
+      padding: 200px 0 210px;
+    }
+    .our-pricing {
+      padding: 100px 0;
+      .section-title {
+        margin-bottom: 35px;
+        .title {
+          font-size: 30px;
+        }
+      }
+      .row {
+        .cart {
+          .pricing-item {
+            .price-box {
+              .price {
+                font-size: 26px;
+              }
+            }
           }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 767.9px) {
+  #pricing {
+    .breadcrump {
+      padding: 160px 0 160px;
+      .content {
+        h1 {
+          font-size: 40px;
+        }
+      }
+    }
+    .our-pricing {
+      padding: 90px 0;
+    }
+  }
+}
+@media (max-width: 575.9px) {
+  #pricing {
+    .breadcrump {
+      .content {
+        h1 {
+          font-size: 34px;
         }
       }
     }
